@@ -45,3 +45,19 @@ const deepObjectCopy = (obj) => {
 };
 
 const copyCounter5 = deepObjectCopy(counter);
+
+// 6
+class Counter{
+  constructor(counter){
+    this.counter=counter
+  }
+  copy(){
+    return new Counter(this.counter)
+  } 
+}
+const prototypeCounter= new Counter(1)
+
+const copyCounter6=prototypeCounter.copy()
+
+
+
