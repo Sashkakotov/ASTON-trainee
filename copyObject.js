@@ -34,13 +34,13 @@ const copyCounter7 = Object.defineProperties(
 
 // Deep copies
 
-// 4
+// 5
 const copyCounter3 = structuredClone(counter);
 
-// 5 lodash library
+// 6 lodash library
 const copyCounter4 = _.cloneDeep(counter);
 
-// 6
+// 7
 const deepObjectCopy = (obj) => {
   if (typeof obj !== "object") return obj;
   const copyObject = {};
@@ -52,7 +52,7 @@ const deepObjectCopy = (obj) => {
 
 const copyCounter5 = deepObjectCopy(counter);
 
-// 6
+// 8
 class Counter {
   constructor(counter) {
     this.counter = counter;
